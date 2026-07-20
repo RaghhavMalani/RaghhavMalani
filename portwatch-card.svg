@@ -1,0 +1,55 @@
+<svg viewBox="0 0 1000 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="pg" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="cone" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#34d399" stop-opacity="0.30"/><stop offset="1" stop-color="#34d399" stop-opacity="0.06"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="220" rx="14" fill="#04060b"/>
+  <rect x="0.5" y="0.5" width="999" height="219" rx="14" stroke="#1d2638"/>
+
+  <text x="40" y="46" fill="#e6edf3" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="24" font-weight="650">India PortWatch</text>
+  <text x="40" y="70" fill="#7d8aa0" font-family="Consolas, Menlo, monospace" font-size="12.5">per-port congestion · delay · throughput — forecast 10 days ahead</text>
+
+  <!-- port + regime chips (like LDR tag) -->
+  <rect x="40" y="92" width="72" height="20" rx="4" fill="#0b1220" stroke="#3d5a80"/>
+  <text x="76" y="106" text-anchor="middle" fill="#8494ac" font-family="Consolas, Menlo, monospace" font-size="11">MUNDRA</text>
+  <rect x="40" y="120" width="150" height="20" rx="4" fill="#171106" stroke="#fbbf24" stroke-opacity="0.6" opacity="0">
+    <animate attributeName="opacity" values="0;1" begin="2.4s" dur="0.5s" fill="freeze"/>
+  </rect>
+  <text x="115" y="134" text-anchor="middle" fill="#fbbf24" font-family="Consolas, Menlo, monospace" font-size="11" opacity="0">regime: CONGESTED
+    <animate attributeName="opacity" values="0;1" begin="2.4s" dur="0.5s" fill="freeze"/>
+  </text>
+
+  <!-- axis -->
+  <line x1="300" y1="185" x2="960" y2="185" stroke="#22304a" stroke-width="1"/>
+
+  <!-- history -->
+  <g filter="url(#pg)">
+    <path d="M 300 148 L 324 143 L 348 135 L 372 140 L 396 129 L 420 128 L 444 133 L 468 124 L 492 123 L 516 123 L 540 113 L 564 109 L 588 111 L 612 108 L 636 110 L 660 102" stroke="#22d3ee" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"
+          stroke-dasharray="371" stroke-dashoffset="371">
+      <animate attributeName="stroke-dashoffset" values="371;0" dur="1.6s" fill="freeze" calcMode="spline" keySplines="0.3 0 0.2 1"/>
+    </path>
+  </g>
+
+  <!-- today divider -->
+  <line x1="660" y1="82" x2="660" y2="185" stroke="#8494ac" stroke-width="1" stroke-dasharray="3 4" opacity="0">
+    <animate attributeName="opacity" values="0;0.7" begin="1.5s" dur="0.4s" fill="freeze"/>
+  </line>
+  <text x="660" y="76" text-anchor="middle" fill="#8494ac" font-family="Consolas, Menlo, monospace" font-size="11" opacity="0">today
+    <animate attributeName="opacity" values="0;1" begin="1.5s" dur="0.4s" fill="freeze"/>
+  </text>
+
+  <!-- confidence cone + forecast -->
+  <path d="M 660 96 L 688 87 L 716 78 L 744 70 L 772 61 L 800 52 L 828 43 L 856 34 L 884 25 L 912 16 L 940 7 L 940 108 L 912 108 L 884 108 L 856 108 L 828 108 L 800 108 L 772 108 L 744 108 L 716 108 L 688 108 L 660 108 Z" fill="url(#cone)" opacity="0">
+    <animate attributeName="opacity" values="0;1" begin="1.8s" dur="0.7s" fill="freeze"/>
+  </path>
+  <path d="M 660 102 L 688 98 L 716 93 L 744 89 L 772 84 L 800 80 L 828 75 L 856 71 L 884 66 L 912 62 L 940 57" stroke="#34d399" stroke-width="2" stroke-dasharray="6 5" stroke-linecap="round" opacity="0">
+    <animate attributeName="opacity" values="0;1" begin="1.9s" dur="0.6s" fill="freeze"/>
+  </path>
+  <text x="956" y="55" text-anchor="end" fill="#34d399" font-family="Consolas, Menlo, monospace" font-size="11" opacity="0">+10d
+    <animate attributeName="opacity" values="0;1" begin="2.2s" dur="0.5s" fill="freeze"/>
+  </text>
+</svg>
