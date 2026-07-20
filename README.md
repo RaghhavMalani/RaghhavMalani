@@ -12,7 +12,7 @@
 
 <sub>Final-year CS · PES University, Bengaluru · Class of 2027</sub>
 <br>
-<sub>Previously — Data & Risk Analytics, <b>Paytm</b> · AI Research, <b>Reliance Jio</b></sub>
+<samp><b>Paytm</b> — Data & Risk Analytics&nbsp;&nbsp;·&nbsp;&nbsp;<b>Reliance Jio</b> — AI Research</samp>
 
 </div>
 
@@ -36,6 +36,8 @@ Traffic-aware rerouting, live incident injection, and a correctness gate validat
 
 <samp><a href="https://github.com/RaghhavMalani/finsight-alpha">repository</a> · <a href="https://finsight-alpha-mocha.vercel.app">live</a></samp>
 
+<img src="finsight-card.svg" alt="FinSight Alpha — quant research terminal" width="100%"/>
+
 A local-first quantitative research terminal. Black–Scholes options pricing, Monte Carlo VaR/CVaR, Markowitz portfolio optimization, an ensemble ML signal lab with walk-forward validation, Gaussian HMM regime detection, and RAG-powered research over filings.
 
 <sub><samp>Python · FastAPI · scikit-learn · FAISS · quantitative finance</samp></sub>
@@ -46,6 +48,8 @@ A local-first quantitative research terminal. Black–Scholes options pricing, M
 
 <samp><a href="https://github.com/RaghhavMalani/LogisticOptimization-_Capstone_168">repository</a></samp>
 
+<img src="portwatch-card.svg" alt="India PortWatch — port congestion forecasting" width="100%"/>
+
 A predictive counterpart to IMF PortWatch for Indian ports: per-port congestion, delay, and throughput forecasting up to 10 days ahead, operational regime inference, event-shock scenario simulation, and routing recommendations.
 
 <sub><samp>Python · time-series forecasting · logistics analytics</samp></sub>
@@ -55,6 +59,8 @@ A predictive counterpart to IMF PortWatch for Indian ports: per-port congestion,
 ## miniRAFT
 
 <samp><a href="https://github.com/RaghhavMalani/miniRAFT_project">repository</a></samp>
+
+<img src="miniraft-card.svg" alt="miniRAFT — Raft consensus with live heartbeats" width="100%"/>
 
 A collaborative real-time drawing board backed by a Raft consensus cluster built from scratch — leader election, log replication, and catch-up synchronization across three replicas, with WebSocket fan-out of committed strokes to every connected browser.
 
