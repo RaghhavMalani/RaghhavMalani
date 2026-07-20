@@ -1,0 +1,63 @@
+<svg viewBox="0 0 1000 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="route" x1="0" y1="0" x2="1000" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.35" r="0.8">
+      <stop offset="0" stop-color="#101726"/>
+      <stop offset="1" stop-color="#05070d"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1000" height="300" rx="14" fill="url(#glow)"/>
+  <rect x="0.5" y="0.5" width="999" height="299" rx="14" stroke="#1c2434"/>
+
+  <!-- faint road network -->
+  <g stroke="#233047" stroke-width="1" opacity="0.55">
+    <path d="M40 250 L150 210 L260 235 L370 190 L480 215"/>
+    <path d="M150 210 L190 120 L320 90 L470 110 L610 70"/>
+    <path d="M370 190 L470 110"/>
+    <path d="M480 215 L620 190 L750 220 L880 180 L960 200"/>
+    <path d="M620 190 L610 70 L760 55 L900 90"/>
+    <path d="M750 220 L760 55"/>
+    <path d="M40 90 L190 120"/>
+    <path d="M320 90 L260 235"/>
+    <path d="M880 180 L900 90"/>
+    <path d="M40 170 L150 210"/>
+  </g>
+  <g fill="#2b3950">
+    <circle cx="40" cy="250" r="2.5"/><circle cx="150" cy="210" r="2.5"/>
+    <circle cx="260" cy="235" r="2.5"/><circle cx="370" cy="190" r="2.5"/>
+    <circle cx="480" cy="215" r="2.5"/><circle cx="190" cy="120" r="2.5"/>
+    <circle cx="320" cy="90" r="2.5"/><circle cx="470" cy="110" r="2.5"/>
+    <circle cx="610" cy="70" r="2.5"/><circle cx="620" cy="190" r="2.5"/>
+    <circle cx="750" cy="220" r="2.5"/><circle cx="880" cy="180" r="2.5"/>
+    <circle cx="760" cy="55" r="2.5"/><circle cx="900" cy="90" r="2.5"/>
+    <circle cx="960" cy="200" r="2.5"/><circle cx="40" cy="90" r="2.5"/>
+    <circle cx="40" cy="170" r="2.5"/>
+  </g>
+
+  <!-- animated route -->
+  <path id="hero-route" d="M40 250 L150 210 L190 120 L320 90 L470 110 L610 70 L760 55 L900 90"
+        stroke="url(#route)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+        stroke-dasharray="1050" stroke-dashoffset="1050">
+    <animate attributeName="stroke-dashoffset" values="1050;0;0;-1050" keyTimes="0;0.45;0.7;1"
+             dur="7s" repeatCount="indefinite"/>
+  </path>
+  <circle cx="40" cy="250" r="4" fill="#22d3ee">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2.3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="900" cy="90" r="4" fill="#a78bfa">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="2.3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- type -->
+  <text x="500" y="148" text-anchor="middle" fill="#f0f4fa"
+        font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="52" font-weight="650"
+        letter-spacing="1.5">Raghhav Malani</text>
+  <text x="500" y="186" text-anchor="middle" fill="#7d8aa0"
+        font-family="Consolas, Menlo, monospace" font-size="15" letter-spacing="0.5">engines for real-world systems — roads · markets · ports · payments</text>
+  <text x="500" y="212" text-anchor="middle" fill="#4a5568"
+        font-family="Consolas, Menlo, monospace" font-size="12.5" letter-spacing="0.5">built to explain themselves</text>
+</svg>
