@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="header.svg" alt="Raghhav Malani — engines for real-world systems" width="100%"/>
+<img src="header_1.svg" alt="Raghhav Malani — engines for real-world systems" width="100%"/>
 
 <br><br>
 
