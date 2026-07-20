@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/header.svg" alt="Raghhav Malani — engines for real-world systems" width="100%"/>
+<img src="header.svg" alt="Raghhav Malani — engines for real-world systems" width="100%"/>
 
 <br><br>
 
@@ -24,7 +24,7 @@
 
 A cinematic 3D visualizer of how map routing actually works, built on Bengaluru's real road network — 220,723 nodes and 279,814 edges from OpenStreetMap. The same route is solved by escalating methods, each stage visibly rebuilding on the last:
 
-<img src="assets/benchmark.svg" alt="Dijkstra 96,830 vs A* 13,554 vs Contraction Hierarchies 846 nodes explored" width="100%"/>
+<img src="benchmark.svg" alt="Dijkstra 96,830 vs A* 13,554 vs Contraction Hierarchies 846 nodes explored" width="100%"/>
 
 Traffic-aware rerouting, live incident injection, and a correctness gate validating CH against plain Dijkstra across 200 random routes with zero error.
 
