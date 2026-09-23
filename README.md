@@ -58,9 +58,9 @@ A predictive counterpart to IMF PortWatch for Indian ports: per-port congestion,
 
 ## miniRAFT
 
-<samp><a href="https://github.com/RaghhavMalani/miniRAFT_project">repository</a></samp>
+<samp><a href="https://github.com/RaghhavMalani/CloudProof">repository</a></samp>
 
-<img src="miniraft-card.svg" alt="miniRAFT — Raft consensus with live heartbeats" width="100%"/>
+<img src="miniraft-card.svg" alt="CloudProof" width="100%"/>
 
 A collaborative real-time drawing board backed by a Raft consensus cluster built from scratch — leader election, log replication, and catch-up synchronization across three replicas, with WebSocket fan-out of committed strokes to every connected browser.
 
